@@ -1,0 +1,131 @@
+.calenderEvents .border-box {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+calendar {
+  float: left;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background: white;
+  width: 300px;
+  border: solid 1px #cccccc;
+  margin-bottom: 10px;
+}
+.calenderEvents div.header {
+  float: left;
+  width: 100%;
+  background: #235C26;
+  height: 40px;
+  color: white;
+}
+.calenderEvents div.header > * {
+  height: 40px;
+  line-height: 40px !important;
+  display: inline-block;
+  vertical-align: middle;
+}
+.calenderEvents div.header > i {
+  float: left;
+  width: 40px;
+  font-size: 1.125em;
+  font-weight: bold;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.calenderEvents div.header > i.fa-angle-left {
+  text-align: left;
+}
+.calenderEvents div.header > i.fa-angle-right {
+  text-align: right;
+  margin-left: -40px;
+}
+.calenderEvents div.header > span {
+  float: left;
+  width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding-left: 50px;
+  margin-left: -40px;
+  text-align: center;
+  padding-right: 40px;
+  color: inherit;
+}
+.calenderEvents div.week {
+  float: left;
+  width: 100%;
+  /*padding-top: 1%;
+  padding-bottom: 1%;*/
+  border-top: solid 1px #cccccc;
+}
+.calenderEvents div.week:first-child {
+  border-top: none;
+}
+.calenderEvents div.week > span.day {
+    float: left;
+    width: 14.285714285714286%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /* border-left: solid 1px #cccccc; */
+    font-size: 0.75em;
+    text-align: center;
+    height: 37px;
+    line-height: 37px !important;
+    display: inline-block;
+    vertical-align: middle;
+    background: white;
+    cursor: pointer;
+    color: black;
+}
+.calenderEvents div.week > span.day:first-child {
+  border-left: none;
+}
+.calenderEvents div.week > span.day.today {
+  background: url(../img/events/today.png) no-repeat center center;
+  height: 50px;
+    background-size: 54%;
+    padding: 0;
+}
+.calenderEvents div.week > span.day.different-month {
+  color: #C0C0C0;
+  visibility: hidden;
+}
+.calenderEvents div.week > span.day.selected {
+  background-color: #235C26 !important;
+    color: white;
+    background: url(../img/events/eclipse.png) no-repeat center bottom;
+    background-size: 13%;
+    margin: 0;
+    height: 50px;
+    background-position-y: 87%;
+    padding-top: 0%;
+}
+.calenderEvents div.week.names > span {
+  color: #000;
+  font-weight: 400;
+}
+.calenderEvents .rytArw{
+    margin-left: -13%;
+    position: absolute !important;
+}
+.calenderEvents .wd25pc{
+  width: 25% !important;
+}
+.calenderEvents .names{
+  height: 32px !important;
+  padding: 0px !important;
+}
+.calenderEvents .names .day{
+  height: 25px;
+}
+.calenderEvents .brdr2pxcc{
+  border: 2px solid #cccccc;
+}
+ .calenderEvents .pd0px{
+    padding: 0px !important;
+  }
